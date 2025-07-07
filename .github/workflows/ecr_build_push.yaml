@@ -2,9 +2,9 @@ name: Build & Push Docker Image to ECR
 
 on:
   push:
-    - branches:
+    branches:
       - main
-    - workflow_dispatch:
+    workflow_dispatch:
 
 permissions:
   id-token: write       # needed for OIDC
